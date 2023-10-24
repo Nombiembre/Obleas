@@ -200,7 +200,7 @@ body {
   --max-width: 1200px;
   --padin: 1em;
 
-  width: min(var(--max-width), (100% - var(--padin)));
+  width: min(var(--max-width), (100% - var(--padin)*2));
   margin-inline: auto;
   box-shadow: var(--shadow);
   border-radius: 1em;
@@ -233,7 +233,4 @@ body {
     max-height: 25%;
   }
 
-  .img-menu{
-    margin-block: 1em;
-  }
 }
