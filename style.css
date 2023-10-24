@@ -16,13 +16,22 @@
   --fw-500: 500;
   --fw-700: 700;
 
-  --fs-300: ;
-  --fs-400: 1rem;
-  --fs-500: 1.25rem;
-  --fs-600: 2rem;
-  --fs-700: 3rem;
+
+  --fs-400: .75rem;
+  --fs-500: 1rem;
+  --fs-600: 1.5rem;
+  --fs-700: 2.5rem;
 
   --shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 50em){
+  :root {
+    --fs-400: 1rem;
+    --fs-500: 1.25rem;
+    --fs-600: 2rem;
+    --fs-700: 3rem;
+  }
 }
 
 .clr-primary-100 {color: var(--clr-primary-100);}
@@ -198,6 +207,7 @@ body {
 }
 
 @media (min-width: 50em){
+  
   .img-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -213,6 +223,7 @@ body {
 }
 
 @media (max-width: 50em) {
+
   .desktop {
     display: none;
   }
@@ -220,8 +231,9 @@ body {
   .mobile {
     max-height: 25%;
   }
-
+  
   .img-menu {
     margin-block: 20px;
   }
 }
+  
