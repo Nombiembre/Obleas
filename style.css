@@ -231,12 +231,9 @@ body {
   .mobile {
     max-height: 25%;
   }
-  body {
-    align-items: start;
-  }
 
   .img-menu{
-    margin-top: 1em;
+    margin-block: 1em;
   }
 }
   
