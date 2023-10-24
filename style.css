@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');/* Box sizing rules */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* Box sizing rules */
 :root {
   --bg: hsl(30, 38%, 92%);
   --clr-primary-green: hsl(158, 36%, 37%);
   --clr-dark-brown: hsl(31, 85%, 13%);
   --clr-light-brown: hsl(31, 85%, 37%, 1);
-  
+
   --clr-neutral-700: hsl(212, 21%, 14%);
   --clr-neutral-400: hsl(228, 12%, 48%);
   --clr-neutral-100: hsl(0, 0%, 100%);
-  
+
   --ff-body: 'Montserrat', sans-serif;
   --ff-heading: 'Fraunces', serif;
 
@@ -25,7 +27,7 @@
   --shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 50em){
+@media (min-width: 50em) {
   :root {
     --fs-400: 1rem;
     --fs-500: 1.25rem;
@@ -34,9 +36,17 @@
   }
 }
 
-.clr-primary-100 {color: var(--clr-primary-100);}
-.clr-black {  color: var(--clr-neutral-700);}
-.clr-green { color: var(--clr-primary-green);}
+.clr-primary-100 {
+  color: var(--clr-primary-100);
+}
+
+.clr-black {
+  color: var(--clr-neutral-700);
+}
+
+.clr-green {
+  color: var(--clr-primary-green);
+}
 
 .fs-heading {
   font-size: var(--fs-700);
@@ -52,24 +62,16 @@
   line-height: 1.1em;
 }
 
-.fw-bold {font-weight: var(--fw-700);}
+.fw-bold {
+  font-weight: var(--fw-700);
+}
+
 .fs-prices {
   font-size: var(--fs-500);
   color: var(--clr-light-brown);
   font-weight: var(--fw-700);
   font-family: var(--ff-heading);
 }
-
-.discount {
-  text-decoration: line-through;
-}
-
-.uppercase {text-transform: uppercase;}
-.spacing {letter-spacing: 0.4em;}
-
-
-
-.fs-tiny {font-size: var(--fs-300);}
 
 .flexy {
   display: flex;
@@ -112,7 +114,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  /*min-height: 100dvh;*/
+  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -132,9 +134,9 @@ picture {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -149,9 +151,8 @@ picture {
 body {
   font-family: var(--ff-body);
   background-color: var(--bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-content: center;
   /* overflow: hidden; */
   font-size: var(--fs-400);
 }
@@ -206,8 +207,8 @@ body {
   overflow: hidden;
 }
 
-@media (min-width: 50em){
-  
+@media (min-width: 50em) {
+
   .img-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -227,7 +228,7 @@ body {
   .desktop {
     display: none;
   }
-  
+
   .mobile {
     max-height: 25%;
   }
@@ -236,4 +237,3 @@ body {
     margin-block: 1em;
   }
 }
-  
