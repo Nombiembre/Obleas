@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
-/* Box sizing rules */
+/* Custom Properties */
 :root {
   --bg: hsl(30, 38%, 92%);
   --clr-primary-green: hsl(158, 36%, 37%);
@@ -37,6 +37,7 @@
   }
 }
 
+/*Utilities Classes*/
 .clr-primary-100 {
   color: var(--clr-primary-100);
 }
@@ -93,7 +94,7 @@
   place-content: center;
 }
 
-/* Reset */
+/* Reset https://piccalil.li/blog/a-modern-css-reset*/
 
 *,
 *::before,
